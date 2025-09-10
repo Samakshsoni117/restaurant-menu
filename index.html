@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add this inside your <head> tag -->
+<script>
+    // Change the name here to update everywhere
+    const restaurantName = "Khao Piyo";
+
+    window.onload = function() {
+        // Update header title
+        document.getElementById("restaurant-title").textContent = restaurantName;
+        // Update footer
+        document.getElementById("restaurant-footer").innerHTML = `&copy; 2023 ${restaurantName}. All rights reserved.`;
+        // Update page title
+        document.title = `${restaurantName} | Restaurant Website`;
+    }
+</script>
+</head>
+<body>
+    <header>
+        <h1 id="restaurant-title"></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                We are a family-owned restaurant serving delicious meals made from fresh ingredients.
+            </p>
+        </section>
+
+                <section id="menu">
+            <h2>Our Menu</h2>
+            <h3>Starters</h3>
+            <ul>
+                <li>Tomato Soup - ₹99</li>
+                <li>Paneer Tikka - ₹179</li>
+                <li>Veg Spring Rolls - ₹149</li>
+                <li>Crispy Corn - ₹199</li>
+            </ul>
+            <h3>Main Course</h3>
+            <ul>
+                <li>Margherita Pizza - ₹349</li>
+                <li>Farmhouse Pizza - ₹399</li>
+                <li>Veg Pasta Alfredo - ₹299</li>
+                <li>Pasta Arrabiata - ₹349</li>
+                <li>Paneer Butter Masala with Naan - ₹299</li>
+                <li>Dal Makhani with Rice - ₹249</li>
+                <li>Veg Biryani with Raita - ₹279</li>  
+                <li>Chole Bhature - ₹199</li>
+                <li>Masala Dosa with Sambar - ₹179</li>
+                <li>Idli Sambar with Chutney - ₹149</li>
+
+            </ul>
+            <h3>Salads</h3>
+            <ul>
+                <li>Greek Salad - ₹149</li>
+                <li>Caesar Salad - ₹169</li>
+                <li>Fruit Salad - ₹119</li>
+                <li>Garden Salad - ₹129</li>
+
+            </ul>
+            <h3>Desserts</h3>
+            <ul>
+                <li>Chocolate Brownie - ₹119</li>
+                <li>Gulab Jamun (2 pcs) - ₹79</li>
+                <li>Ice Cream (per scoop) - ₹59</li>
+                <li>Cheesecake - ₹149</li>
+
+            </ul>
+            <h3>Beverages</h3>
+            <ul>
+                <li>Fresh Lime Soda - ₹69</li>
+                <li>Cold Coffee - ₹99</li>
+                <li>Masala Chai - ₹49</li>
+                <li>Soft Drinks - ₹49</li>
+                <li>Mineral Water - ₹29</li>
+
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: samakshsoni117@gmail.com</p>
+            <p>Phone: 7441174654</p>
+        </section>
+    </main>
+
+    <footer>
+      <p id="restaurant-footer"></p>
+    </footer>
+</body>
